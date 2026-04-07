@@ -30,53 +30,57 @@ This project demonstrates a complete **end-to-end Data Science lifecycle** from 
 ## 🔄 Data Science Lifecycle
 
 ### 1️⃣ Data Collection & Import
-- Loaded dataset using Pandas
-- Inspected data structure and types
+- Loaded dataset using Pandas  
+- Explored data structure and features  
 
 ### 2️⃣ Data Cleaning & Preprocessing
-- Handled missing values
-- Removed duplicates
-- Standardized data formats
+- Handled missing values  
+- Removed duplicates  
+- Standardized formats  
 
 ### 3️⃣ Feature Engineering
 - Created new features such as:
-  - Duration categories
-  - Time-based features (Year, Quarter)
-  - Derived metrics
+  - Duration categories  
+  - Time-based features (Year, Quarter)  
+  - Derived business metrics  
 
 ### 4️⃣ Exploratory Data Analysis (EDA)
 - Analyzed:
-  - Subjects distribution
-  - Pricing patterns
-  - Subscriber behavior
-- Visualized insights using Plotly
+  - Subject distribution  
+  - Pricing patterns  
+  - Subscriber behavior  
+- Visualized insights using Plotly  
 
 ### 5️⃣ Time Series Analysis
-- Analyzed trends over time for:
-  - Profit
-  - Subscribers
-- Identified growth patterns and seasonality
+- Analyzed trends for:
+  - Profit  
+  - Subscribers  
+- Identified growth trends and seasonality  
 
 ### 6️⃣ Machine Learning Model
-- Built **XGBoost regression model**
-- Predicts optimal course price
-- Based on features like:
-  - Subject
-  - Duration
-  - Level
-  - Number of lectures
-  - Time features
+- Built **XGBoost regression model (Best Model)**  
+- Predicts optimal course price  
+- Uses features like:
+  - Subject  
+  - Duration  
+  - Number of lectures  
+  - Difficulty level  
+  - Time features  
+
+- Evaluation Metrics:
+  - **RMSE (Root Mean Squared Error)**  
+  - **MAE (Mean Absolute Error)**  
 
 ### 7️⃣ Recommendation System
-- Built content-based recommendation system
-- Used:
-  - TF-IDF Vectorization
-  - Cosine Similarity
-- Recommends similar course titles
+- Built content-based recommendation system  
+- Techniques used:
+  - TF-IDF Vectorization  
+  - Cosine Similarity  
+- Recommends similar course titles based on content  
 
 ### 8️⃣ Deployment
-- Built interactive web app using Streamlit
-- Deployed on Streamlit Cloud
+- Developed interactive web app using Streamlit  
+- Deployed on Streamlit Cloud  
 
 ---
 
@@ -84,9 +88,9 @@ This project demonstrates a complete **end-to-end Data Science lifecycle** from 
 
 - Web Development is the most profitable subject  
 - Short courses (1–3 hours) perform best  
-- Free courses increase user engagement  
+- Free courses attract more users  
 - Optimal price range: $25–$50  
-- Strong seasonal patterns in course performance  
+- Strong seasonal trends in course performance  
 
 ---
 
@@ -94,11 +98,12 @@ This project demonstrates a complete **end-to-end Data Science lifecycle** from 
 
 - **Price Prediction Model**
   - Algorithm: XGBoost  
-  - Accuracy: ~92%  
+  - Evaluation Metrics: RMSE and MAE  
+  - Predicts optimal course pricing based on input features  
 
 - **Recommendation System**
   - TF-IDF + Cosine Similarity  
-  - Smart course recommendations  
+  - Suggests similar courses based on titles and content  
 
 ---
 
