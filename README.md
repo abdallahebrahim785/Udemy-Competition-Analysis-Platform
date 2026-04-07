@@ -16,105 +16,77 @@
 
 This project is a **Data Science and Machine Learning-powered analytics platform** designed to analyze Udemy course data and simulate real-world business decision-making.
 
-It helps answer key business questions such as:
+It answers key questions such as:
 - What makes a course successful?
-- How should pricing be optimized?
-- Which subjects are most profitable?
+- How should courses be priced?
+- Which subjects are the most profitable?
 - How do subscribers and profits evolve over time?
-- How can we build a recommendation system for courses?
+- How can we recommend similar courses?
 
 This project demonstrates a complete **end-to-end Data Science lifecycle** from raw data to deployment.
 
 ---
 
-## 🔄 Data Science Lifecycle (What I Built)
-
-This project follows a full professional data science workflow:
+## 🔄 Data Science Lifecycle
 
 ### 1️⃣ Data Collection & Import
-- Imported dataset using **Pandas**
-- Loaded raw Udemy course data
-- Inspected structure and data types
-
----
+- Loaded dataset using Pandas
+- Inspected data structure and types
 
 ### 2️⃣ Data Cleaning & Preprocessing
 - Handled missing values
 - Removed duplicates
-- Fixed inconsistent data formats
-- Prepared dataset for analysis
-
----
+- Standardized data formats
 
 ### 3️⃣ Feature Engineering
-- Created new meaningful features such as:
-  - Course duration categories  
-  - Revenue-related metrics  
-  - Time-based features (Year, Quarter)  
-- Encoded categorical variables for ML models  
-
----
+- Created new features such as:
+  - Duration categories
+  - Time-based features (Year, Quarter)
+  - Derived metrics
 
 ### 4️⃣ Exploratory Data Analysis (EDA)
-- Analyzed key features:
-  - 🎓 Subject distribution  
-  - 💰 Price patterns  
-  - 📊 Subscriber behavior  
-- Visualized insights using **Plotly**
-- Identified relationships between variables  
-
----
+- Analyzed:
+  - Subjects distribution
+  - Pricing patterns
+  - Subscriber behavior
+- Visualized insights using Plotly
 
 ### 5️⃣ Time Series Analysis
 - Analyzed trends over time for:
-  - 📈 Profit  
-  - 👥 Subscribers  
-- Detected:
-  - Growth patterns  
-  - Seasonal trends  
-  - Peak performance periods  
+  - Profit
+  - Subscribers
+- Identified growth patterns and seasonality
 
----
-
-### 6️⃣ Machine Learning Model (Price Prediction)
-- Built a regression model using **XGBoost**
-- Used features like:
-  - Subject  
-  - Course level  
-  - Duration  
-  - Number of lectures  
-  - Time features  
-- هدف النموذج:
-  👉 Predict the optimal price of a course  
-- Evaluated using error metrics and model performance  
-
----
+### 6️⃣ Machine Learning Model
+- Built **XGBoost regression model**
+- Predicts optimal course price
+- Based on features like:
+  - Subject
+  - Duration
+  - Level
+  - Number of lectures
+  - Time features
 
 ### 7️⃣ Recommendation System
-- Built a **content-based recommendation system**
+- Built content-based recommendation system
 - Used:
-  - TF-IDF Vectorization  
-  - Cosine Similarity  
-- هدف النظام:
-  👉 Recommend similar course titles  
-- Helps users discover relevant courses based on content similarity  
-
----
+  - TF-IDF Vectorization
+  - Cosine Similarity
+- Recommends similar course titles
 
 ### 8️⃣ Deployment
-- Built interactive web app using **Streamlit**
-- Deployed on **Streamlit Cloud**
-- Created real-time dashboards and predictions
+- Built interactive web app using Streamlit
+- Deployed on Streamlit Cloud
 
 ---
 
 ## 💡 Key Insights
 
-- 📈 Web Development is the most profitable subject  
-- ⏱️ Short courses perform better  
-- 🆓 Free courses attract more users  
-- 💰 Optimal pricing: $25–$50  
-- 📊 Strong seasonal trends in user engagement  
+- Web Development is the most profitable subject  
+- Short courses (1–3 hours) perform best  
+- Free courses increase user engagement  
+- Optimal price range: $25–$50  
+- Strong seasonal patterns in course performance  
 
 ---
 
@@ -126,7 +98,7 @@ This project follows a full professional data science workflow:
 
 - **Recommendation System**
   - TF-IDF + Cosine Similarity  
-  - Smart course matching  
+  - Smart course recommendations  
 
 ---
 
@@ -150,36 +122,12 @@ This project follows a full professional data science workflow:
 
 ---
 
-## 👨‍💻 About Me
+## 🚀 Run Locally
 
-**Eng. Abdallah Ibrahim**  
-Data Science & AI Engineer  
+```bash
+git clone https://github.com/abdallahebrahim785/udemy-competition-analysis.git
+cd udemy-competition-analysis
 
-📧 Email: abdallahebrahim785@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/abdallah-ibrahim-mohamed-4556792a5/  
-💻 GitHub: https://github.com/your-username  
+pip install -r requirements.txt
 
----
-
-## 🎯 Skills Demonstrated
-
-- Data Analysis & Visualization  
-- Feature Engineering  
-- Machine Learning  
-- Time Series Analysis  
-- NLP (TF-IDF)  
-- End-to-End Project Deployment  
-- Business Intelligence  
-
----
-
-## ⭐ Support
-
-If you like this project:
-- ⭐ Star the repository  
-- 🔄 Share it  
-- 💬 Give feedback  
-
----
-
-**Built with ❤️ by Eng. Abdallah Ibrahim**
+streamlit run app.py
