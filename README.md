@@ -103,7 +103,7 @@ This project demonstrates a complete **end-to-end Data Science lifecycle** from 
 
 - **Recommendation System**
   - TF-IDF + Cosine Similarity  
-  - Suggests similar courses based on titles and content  
+  - Suggests similar courses based on content  
 
 ---
 
